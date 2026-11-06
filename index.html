@@ -1,1 +1,925 @@
 
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharati — Eternal Tapestry of Indian Culture, Faith & Transformation</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        gold: {
+                            100: '#fef9c3',
+                            300: '#fde047',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#d97706',
+                            goldAccent: '#d4af37',
+                            lightGold: '#f3e5ab'
+                        },
+                        saffron: {
+                            400: '#ff9933',
+                            500: '#ff8000',
+                            600: '#e65c00',
+                            800: '#993300'
+                        },
+                        maroon: {
+                            800: '#4a0e17',
+                            900: '#2c080e',
+                            950: '#1a0408'
+                        },
+                        obsidian: '#0a0908',
+                        darkcard: '#141210'
+                    },
+                    fontFamily: {
+                        sans: ['Cinzel', 'Inter', 'serif'],
+                        body: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons & Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            background-color: #070605;
+            color: #e5e7eb;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        h1, h2, h3, .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold-glow {
+            box-shadow: 0 0 25px rgba(212, 175, 55, 0.25);
+        }
+        .gold-border-glow:hover {
+            border-color: #d4af37;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #fff3c4 0%, #d4af37 50%, #aa7c11 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .saffron-gradient-text {
+            background: linear-gradient(135deg, #ffcc80 0%, #ff9933 50%, #e65c00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glass-panel {
+            background: rgba(20, 18, 16, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.18);
+        }
+        .glass-card {
+            background: rgba(18, 15, 12, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 12px 30px -10px rgba(212, 175, 55, 0.25);
+        }
+        ::-webkit-scrollbar { width: 7px; }
+        ::-webkit-scrollbar-track { background: #070605; }
+        ::-webkit-scrollbar-thumb { background: #d4af3744; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #d4af3788; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-gold-500 selection:text-black">
+
+    <!-- Glowing Background Lights -->
+    <div class="fixed top-[-10%] left-[-10%] w-[45vw] h-[45vw] rounded-full bg-saffron-600/10 blur-[150px] pointer-events-none z-0"></div>
+    <div class="fixed top-[40%] right-[-10%] w-[40vw] h-[40vw] rounded-full bg-gold-600/10 blur-[150px] pointer-events-none z-0"></div>
+
+    <!-- STICKY TOP HEADER -->
+    <header class="sticky top-0 z-40 w-full glass-panel border-b border-gold-500/20 px-4 lg:px-8 py-3">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#epic-vista" class="flex items-center space-x-3 cursor-pointer group">
+                <div class="w-11 h-11 rounded-full bg-gradient-to-br from-gold-400 via-saffron-500 to-maroon-800 flex items-center justify-center text-obsidian font-black text-2xl shadow-lg gold-glow group-hover:scale-105 transition-all">
+                    🕉️
+                </div>
+                <div>
+                    <h1 class="text-xl font-bold tracking-wider text-white flex items-center gap-2">
+                        BHARATI <span class="gold-gradient-text italic font-serif text-sm sm:text-base">bharat</span>
+                    </h1>
+                    <p class="text-[9px] sm:text-[10px] text-gold-400/80 font-medium tracking-widest uppercase">The Eternal Tapestry of Culture & Faith</p>
+                </div>
+            </a>
+
+            <!-- Quick Global Search Bar -->
+            <div class="hidden md:flex items-center bg-obsidian/80 border border-gold-500/30 rounded-full px-3 py-1.5 w-72 focus-within:border-gold-400 focus-within:ring-1 focus-within:ring-gold-400/50">
+                <i class="fa-solid fa-magnifying-glass text-gold-400/70 text-xs mr-2"></i>
+                <input id="topNavSearch" type="text" oninput="liveGlobalSearch(this.value)" placeholder="Search Deities, Temples, Epics..." class="bg-transparent text-xs text-white placeholder-gray-500 focus:outline-none w-full">
+            </div>
+
+            <!-- Mobile Drawer Button -->
+            <button onclick="toggleMobileMenu()" class="lg:hidden p-2 rounded-lg bg-gold-500/10 text-gold-400 hover:bg-gold-500/20">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- 12 NAVIGATION MENU DECK -->
+        <nav class="max-w-7xl mx-auto mt-2 pt-2 border-t border-gold-500/10 hidden lg:flex items-center justify-between overflow-x-auto text-xs font-semibold no-scrollbar">
+            <a href="#epic-vista" class="nav-link px-3 py-1.5 rounded-lg text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-om mr-1"></i> 1. Epic Vista</a>
+            <a href="#era-transformation" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-timeline mr-1"></i> 2. Eras & Shift</a>
+            <a href="#sacred-religions" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-hands-praying mr-1"></i> 3. Sacred Faiths</a>
+            <a href="#holy-geography" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-gopuram mr-1"></i> 4. Holy Places</a>
+            <a href="#pantheon-deb-debi" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-sun mr-1 text-saffron-400"></i> 5. Deb & Debi</a>
+            <a href="#sacred-epics" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-book-journal-whills mr-1"></i> 6. Epics & Lore</a>
+            <a href="#architecture" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-monument mr-1"></i> 7. Architecture</a>
+            <a href="#art-dance-music" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-drum mr-1"></i> 8. Dance & Ragas</a>
+            <a href="#festivals" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-fire mr-1 text-saffron-400"></i> 9. Festivals</a>
+            <a href="#philosophies" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-brain mr-1"></i> 10. Philosophies</a>
+            <a href="#modern-synthesis" class="nav-link px-3 py-1.5 rounded-lg text-gray-300 hover:text-gold-300 hover:bg-gold-500/10 whitespace-nowrap"><i class="fa-solid fa-globe mr-1"></i> 11. Modern World</a>
+            <a href="#archive-search" class="nav-link px-3 py-1.5 rounded-lg text-saffron-400 bg-saffron-500/10 border border-saffron-500/30 whitespace-nowrap"><i class="fa-solid fa-box-archive mr-1"></i> 12. Global Archive</a>
+        </nav>
+
+        <!-- MOBILE SLIDE-OUT DRAWER -->
+        <div id="mobileDrawer" class="hidden lg:hidden mt-3 pt-3 border-t border-gold-500/20 space-y-1 text-xs">
+            <a href="#epic-vista" onclick="toggleMobileMenu()" class="block p-2 rounded text-gold-300 bg-gold-500/10">1. Epic Vista & Heritage</a>
+            <a href="#era-transformation" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">2. Timeline of Eras</a>
+            <a href="#sacred-religions" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">3. Sacred Faiths & Religions</a>
+            <a href="#holy-geography" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">4. Holy Places & Geography</a>
+            <a href="#pantheon-deb-debi" onclick="toggleMobileMenu()" class="block p-2 rounded text-gold-300 font-bold">5. Deb & Debi (Cosmic Deities)</a>
+            <a href="#sacred-epics" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">6. Sacred Epics & Literature</a>
+            <a href="#architecture" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">7. Architectural Marvels</a>
+            <a href="#art-dance-music" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">8. Classical Dance & Music</a>
+            <a href="#festivals" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">9. Sacred Festivals & Rituals</a>
+            <a href="#philosophies" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">10. 6 Schools of Philosophy</a>
+            <a href="#modern-synthesis" onclick="toggleMobileMenu()" class="block p-2 rounded text-gray-300">11. Modern Synthesis & Diaspora</a>
+            <a href="#archive-search" onclick="toggleMobileMenu()" class="block p-2 rounded text-saffron-400">12. Universal Search Archive</a>
+        </div>
+    </header>
+
+    <!-- MAIN BODY CONTAINER -->
+    <main class="flex-1 max-w-7xl w-full mx-auto px-4 lg:px-8 py-8 space-y-24 z-10">
+
+        <!-- SECTION 1: EPIC VISTA / HERO BANNER -->
+        <section id="epic-vista" class="relative rounded-3xl p-8 sm:p-14 glass-panel border border-gold-500/30 overflow-hidden text-center sm:text-left shadow-2xl">
+            <div class="absolute -right-20 -bottom-20 w-96 h-96 bg-gradient-to-br from-saffron-500/20 to-gold-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="max-w-3xl space-y-6 relative z-10">
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/15 text-gold-300 border border-gold-500/30 text-xs font-semibold tracking-wider uppercase">
+                    <i class="fa-solid fa-om"></i> Sanatana & Beyond — 5,000+ Years of History
+                </span>
+                
+                <h1 class="text-3xl sm:text-6xl font-black text-white leading-tight">
+                    BHARATI: <br>
+                    <span class="gold-gradient-text">The Eternal Tapestry of Faith, Deities & Civilization</span>
+                </h1>
+                
+                <p class="text-sm sm:text-base text-gray-300 font-light leading-relaxed font-playfair italic">
+                    "Ekam Sat Vipra Bahudha Vadanti" — Truth is One, the wise call it by many names. Explore the sacred transformation from Indus-Vedic rituals to high classical empires, the supreme pantheon of Debs & Debis, holy geography, and modern cultural re-awakening.
+                </p>
+
+                <!-- Daily Wisdom Banner -->
+                <div class="p-4 rounded-2xl bg-obsidian/90 border border-gold-500/30 text-xs sm:text-sm text-gold-300 italic flex items-center gap-3">
+                    <i class="fa-solid fa-quote-left text-2xl text-saffron-400"></i>
+                    <div>
+                        <p class="font-serif">"As the rivers originating from different sources all find their peace in the ocean, so do all paths lead unto the Supreme Cosmic Light."</p>
+                        <span class="text-[10px] text-gray-400 not-italic uppercase tracking-widest font-sans font-semibold mt-1 block">— Rigveda Synthesis</span>
+                    </div>
+                </div>
+
+                <!-- Stats Deck -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-4 border-t border-gold-500/20">
+                    <div>
+                        <span class="block text-2xl font-black text-gold-400">5000+</span>
+                        <span class="text-[11px] text-gray-400">Years of History</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-black text-saffron-400">33 Crore</span>
+                        <span class="text-[11px] text-gray-400">Cosmic Aspects (Devas)</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-black text-gold-400">6 Major</span>
+                        <span class="text-[11px] text-gray-400">Darshanas (Philosophies)</span>
+                    </div>
+                    <div>
+                        <span class="block text-2xl font-black text-saffron-400">100+</span>
+                        <span class="text-[11px] text-gray-400">Sacred Holy Tirthas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: ERA TRANSFORMATION TIMELINE -->
+        <section id="era-transformation" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4 flex items-center justify-between">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                        <i class="fa-solid fa-timeline text-gold-400"></i> Era Transformation: Past to Present
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-1">Tracing Indian civilization from ancient Vedic rituals to global tech & spiritual renaissance.</p>
+                </div>
+            </div>
+
+            <!-- Horizontal / Vertical Interactive Timeline -->
+            <div id="eraTimelineGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dynamically Populated by JS -->
+            </div>
+        </section>
+
+        <!-- SECTION 3: SACRED RELIGIONS & FAITHS -->
+        <section id="sacred-religions" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-hands-praying text-saffron-400"></i> Sacred Faiths of Bharat
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Foundational origins, sacred scripts, and peaceful synthesis of world religions nurtured on Indian soil.</p>
+            </div>
+
+            <div id="religionsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+        </section>
+
+        <!-- SECTION 4: HOLY PLACES & GEOGRAPHY -->
+        <section id="holy-geography" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4 flex flex-col sm:flex-row justify-between sm:items-center gap-4">
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                        <i class="fa-solid fa-gopuram text-gold-400"></i> Sacred Geography & Tirthas
+                    </h2>
+                    <p class="text-xs sm:text-sm text-gray-400 mt-1">Varanasi, Kedarnath, Golden Temple, Bodh Gaya, and ancient spiritual epicenters.</p>
+                </div>
+                <input id="holyPlaceFilter" type="text" oninput="renderHolyPlaces(this.value)" placeholder="Filter holy places..." class="bg-darkcard border border-gold-500/30 rounded-xl px-4 py-2 text-xs text-white focus:outline-none focus:border-gold-400 w-full sm:w-64">
+            </div>
+
+            <div id="holyPlacesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+        </section>
+
+        <!-- SECTION 5: DEITIES & COSMIC PANTHEON (DEB & DEBI) -->
+        <section id="pantheon-deb-debi" class="space-y-8">
+            <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-gold-500/40 relative overflow-hidden">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-gold-500/20 pb-6 mb-6">
+                    <div>
+                        <span class="px-3 py-1 rounded-full bg-saffron-500/20 text-saffron-400 text-xs font-bold uppercase tracking-wider">Supreme Devas & Devis</span>
+                        <h2 class="text-3xl sm:text-4xl font-black text-white mt-2">Cosmic Pantheon (Deb & Debi)</h2>
+                        <p class="text-xs sm:text-sm text-gray-400">In-depth profiles of Brahma, Vishnu, Shiva, Durga, Kali, Lakshmi, Saraswati, Ganesha, Hanuman & Krishna.</p>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <button onclick="filterDeities('All')" class="px-3.5 py-1.5 rounded-xl bg-gold-500/20 text-gold-300 border border-gold-500/30 text-xs font-bold hover:bg-gold-500/40 transition-all">All Cosmic Forces</button>
+                        <button onclick="filterDeities('Deb')" class="px-3.5 py-1.5 rounded-xl bg-obsidian text-gray-300 border border-white/10 text-xs font-bold hover:bg-gold-500/20 hover:text-gold-300 transition-all">Deb (Devas)</button>
+                        <button onclick="filterDeities('Debi')" class="px-3.5 py-1.5 rounded-xl bg-obsidian text-gray-300 border border-white/10 text-xs font-bold hover:bg-gold-500/20 hover:text-gold-300 transition-all">Debi (Devis)</button>
+                    </div>
+                </div>
+
+                <div id="deitiesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Dynamically Populated -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 6: SACRED EPICS & LORE -->
+        <section id="sacred-epics" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-book-journal-whills text-saffron-400"></i> Sacred Epics & Itihasa
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">The moral, spiritual, and philosophical guidance of Ramayana, Mahabharata & Upanishads.</p>
+            </div>
+
+            <div id="epicsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+        </section>
+
+        <!-- SECTION 7: ARCHITECTURAL MARVELS -->
+        <section id="architecture" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-monument text-gold-400"></i> Architectural Heritage
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Dravidian vimanas, Nagara spires, rock-cut Ellora caves, and stepwells built with mathematical precision.</p>
+            </div>
+
+            <div id="architectureGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+        </section>
+
+        <!-- SECTION 8: ART, DANCE & MUSIC -->
+        <section id="art-dance-music" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-drum text-saffron-400"></i> Classical Dance & Music Ragas
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Natya Shastra, Bharatanatyam, Kathakali, Hindustani & Carnatic classical traditions.</p>
+            </div>
+
+            <div id="artsGrid" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+        </section>
+
+        <!-- SECTION 9: FESTIVALS & RITUALS -->
+        <section id="festivals" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-fire text-saffron-400"></i> Cosmic Festivals & Ritual Cycle
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Kumbh Mela, Diwali, Durga Puja, Holi, Navratri, and harvest celebrations.</p>
+            </div>
+
+            <div id="festivalsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+        </section>
+
+        <!-- SECTION 10: PHILOSOPHICAL SCHOOLS (SHAT-DARSHANAS) -->
+        <section id="philosophies" class="space-y-8">
+            <div class="border-b border-gold-500/20 pb-4">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white flex items-center gap-3">
+                    <i class="fa-solid fa-brain text-gold-400"></i> The Shat-Darshanas (6 Schools of Philosophy)
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-400 mt-1">Nyaya, Vaisheshika, Samkhya, Yoga, Mimamsa, and Vedanta.</p>
+            </div>
+
+            <div id="philosophiesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Dynamically Populated -->
+            </div>
+        </section>
+
+        <!-- SECTION 11: MODERN CULTURAL SYNTHESIS -->
+        <section id="modern-synthesis" class="space-y-8">
+            <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-gold-500/30">
+                <h2 class="text-2xl sm:text-3xl font-bold text-white mb-2 flex items-center gap-3">
+                    <i class="fa-solid fa-globe text-saffron-400"></i> Modern Cultural Synthesis & Global Footprint
+                </h2>
+                <p class="text-xs sm:text-sm text-gray-400 mb-6">How ancient Indian wisdom evolved into Yoga, Ayurveda, Cinema, Digital Tech, and world-wide diaspora influence.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs text-gray-300">
+                    <div class="p-5 rounded-2xl bg-obsidian/80 border border-gold-500/20 space-y-2">
+                        <i class="fa-solid fa-leaf text-gold-400 text-xl"></i>
+                        <h4 class="font-bold text-white text-sm">Ayurveda & Global Yoga</h4>
+                        <p class="text-gray-400 leading-relaxed">Holistic health systems originating from Atharvaveda, now practiced by over 300 million people globally for mind-body wellness.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-obsidian/80 border border-gold-500/20 space-y-2">
+                        <i class="fa-solid fa-film text-saffron-400 text-xl"></i>
+                        <h4 class="font-bold text-white text-sm">Indian Cinema & Storytelling</h4>
+                        <p class="text-gray-400 leading-relaxed">From Satyajit Ray's art cinema to global blockbusters, projecting Indian mythology, musical arts, and human stories worldwide.</p>
+                    </div>
+                    <div class="p-5 rounded-2xl bg-obsidian/80 border border-gold-500/20 space-y-2">
+                        <i class="fa-solid fa-microchip text-gold-400 text-xl"></i>
+                        <h4 class="font-bold text-white text-sm">Tech & Spiritual Synthesis</h4>
+                        <p class="text-gray-400 leading-relaxed">Bridging ancient mathematical discoveries (Zero, Decimal systems) with modern software engineering and global tech leadership.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 12: UNIVERSAL SEARCH ARCHIVE -->
+        <section id="archive-search" class="space-y-8">
+            <div class="glass-panel p-8 rounded-3xl border border-gold-500/40 text-center relative overflow-hidden">
+                <span class="px-3 py-1 rounded-full bg-saffron-500/20 text-saffron-300 text-xs font-bold uppercase tracking-widest">Master Encyclopedia Index</span>
+                <h2 class="text-3xl font-black text-white mt-2 mb-4">Universal Cultural Archive & Search</h2>
+                <p class="text-xs sm:text-sm text-gray-400 max-w-xl mx-auto mb-6">Filter across hundreds of deities, historical eras, architectural monuments, and philosophical terms in real-time.</p>
+
+                <div class="max-w-2xl mx-auto flex items-center bg-obsidian border border-gold-500/40 rounded-2xl p-2 focus-within:border-gold-400">
+                    <i class="fa-solid fa-magnifying-glass text-gold-400 px-3"></i>
+                    <input id="archiveSearchInput" type="text" oninput="liveGlobalSearch(this.value)" placeholder="Search any term (e.g. Shiva, Varanasi, Upanishad, Chola, Yoga)..." class="w-full bg-transparent text-white placeholder-gray-500 text-xs sm:text-sm focus:outline-none py-2">
+                </div>
+
+                <!-- Dynamic Live Results Output Container -->
+                <div id="searchResultsContainer" class="mt-8 text-left grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 hidden">
+                    <!-- Populated via live query -->
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="glass-panel border-t border-gold-500/20 py-8 px-4 lg:px-8 mt-16 z-10 text-center sm:text-left">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+            <div class="flex items-center space-x-3">
+                <span class="w-2.5 h-2.5 rounded-full bg-gold-400 animate-pulse"></span>
+                <span class="font-bold text-white font-cinzel">BHARATI ENCYCLOPEDIA</span> — Preserving Ancient Wisdom for Eternity
+            </div>
+            <div class="font-serif italic text-gold-400/80">
+                "Sarve Bhavantu Sukhinah, Sarve Santu Niramayah" (May all beings be happy and free from suffering)
+            </div>
+        </div>
+    </footer>
+
+    <!-- DETAILED MODAL POPUP FOR DEITIES (DEB/DEBI), ERAS & HOLY PLACES -->
+    <div id="detailModal" class="fixed inset-0 bg-black/85 backdrop-blur-md z-50 hidden flex items-center justify-center p-4 overflow-y-auto">
+        <div class="glass-panel max-w-3xl w-full rounded-3xl p-6 sm:p-8 border border-gold-500/50 relative max-h-[90vh] overflow-y-auto text-left shadow-2xl">
+            <button onclick="closeDetailModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-obsidian hover:bg-gold-500/20 text-gold-400 border border-gold-500/30 flex items-center justify-center text-sm transition-all"><i class="fa-solid fa-xmark"></i></button>
+            <div id="modalContent">
+                <!-- Dynamically Injected -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JAVASCRIPT APPLICATION LOGIC & COMPREHENSIVE DATA STORE -->
+    <script>
+        // COMPREHENSIVE DATABASE FOR INDIAN CULTURE, DEITIES (DEB/DEBI), FAITHS & ERAS
+        const database = {
+            eras: [
+                {
+                    id: 'vedic-era',
+                    title: 'Indus-Vedic Foundations',
+                    time: '3300 BCE – 500 BCE',
+                    desc: 'The dawn of Sanatana Dharma, urban planning in Harappa, composition of the 4 Vedas (Rig, Sama, Yajur, Atharva), and fire rituals (Yajna).',
+                    details: 'During this formative era, the Indus Valley Civilization displayed unprecedented urban planning, while Vedic rishis chanted mantras along the sacred Saraswati and Indus rivers. This period established core concepts of Karma, Dharma, and Cosmic Order (Rta).'
+                },
+                {
+                    id: 'classical-empire',
+                    title: 'Golden Classical Empires',
+                    time: '500 BCE – 1200 CE',
+                    desc: 'Maurya, Gupta, Chola & Chalukya dynasties. Flowering of temple architecture, Upanishadic philosophy, Nalanda University, and Buddhist-Jain expansion.',
+                    details: 'Under emperors like Ashoka, Chandragupta, and Rajendra Chola, India became the intellectual and economic hub of the world. Great temple complexes were carved from solid rock at Ellora and Ajanta, while universities like Nalanda attracted scholars across Asia.'
+                },
+                {
+                    id: 'medieval-synthesis',
+                    title: 'Medieval & Bhakti Renaissance',
+                    time: '1200 CE – 1757 CE',
+                    desc: 'Sufi-Bhakti movements led by Kabir, Mirabai, Chaitanya Mahaprabhu & Guru Nanak. Indo-Islamic architectural harmony and Maratha-Vijayanagara resilience.',
+                    details: 'The Bhakti and Sufi movements democratized spirituality, discarding rigid caste barriers in favor of personal devotion (Bhakti). Music, poetry, and syncretic art flourished throughout the subcontinent.'
+                },
+                {
+                    id: 'modern-renaissance',
+                    title: 'Colonial Struggle & Tech Renaissance',
+                    time: '1757 CE – Present',
+                    desc: 'Freedom struggle, spiritual reform led by Swami Vivekananda & Sri Aurobindo, leading to modern secular democracy and global tech power.',
+                    details: 'Swami Vivekananda introduced Vedantic wisdom to the West in 1893. Today, modern India combines millennia-old spiritual traditions with space exploration, digital innovation, and global cultural leadership.'
+                }
+            ],
+            religions: [
+                {
+                    name: 'Sanatana Dharma (Hinduism)',
+                    symbol: '🕉️',
+                    core: 'Dharma, Karma, Reincarnation, Moksha',
+                    desc: 'The world\'s oldest living faith system with diverse philosophical traditions, venerating the divine in all forms and beyond form (Nirguna & Saguna).'
+                },
+                {
+                    name: 'Buddhism (Bauddha Dharma)',
+                    symbol: '☸️',
+                    core: 'Four Noble Truths, Eightfold Path, Nirvana',
+                    desc: 'Founded by Siddhartha Gautama (The Buddha) in Bodh Gaya. Emphasizes mindfulness, compassion (Karuna), and liberation from suffering.'
+                },
+                {
+                    name: 'Jainism (Jaina Dharma)',
+                    symbol: '✋',
+                    core: 'Ahimsa (Non-violence), Anekantavada, Aparigraha',
+                    desc: 'Guided by 24 Tirthankaras, ending with Bhagwan Mahavira. Radical reverence for all living souls and spiritual self-mastery.'
+                },
+                {
+                    name: 'Sikhism (Sikhi)',
+                    symbol: 'ੴ',
+                    core: 'Ik Onkar (One Supreme Truth), Seva, Equality',
+                    desc: 'Founded by Guru Nanak Dev Ji in Punjab. Emphasizes selfless service, devotion to the Guru Granth Sahib, and defending righteousness.'
+                },
+                {
+                    name: 'Sufism & Islam in India',
+                    symbol: '☪️',
+                    core: 'Divine Love, Tasawwuf, Universal Brotherhood',
+                    desc: 'Enriched by Sufi saints like Khwaja Moinuddin Chishti and Nizamuddin Auliya, blending mystical qawwali music with devotional synthesis.'
+                },
+                {
+                    name: 'Christianity, Zoroastrianism & Animism',
+                    symbol: '✝️ 🕯️',
+                    core: 'St. Thomas Heritage, Parsi Fire Worship, Indigenous Reverence',
+                    desc: 'Ancient St. Thomas Christians (52 CE), Parsi Zoroastrians fleeing Persia, and tribal traditions honoring sacred groves (Sarna).'
+                }
+            ],
+            deities: [
+                {
+                    id: 'shiva',
+                    type: 'Deb',
+                    name: 'Lord Shiva (Mahadeva)',
+                    aspect: 'The Supreme Yogi & Cosmic Transformer',
+                    consort: 'Goddess Parvati / Shakti',
+                    mantra: 'Om Namah Shivaya',
+                    img: 'https://placehold.co/600x400/1a0408/d4af37?text=Lord+Shiva+(Mahadeva)',
+                    story: 'Lord Shiva is the embodiment of supreme consciousness, meditation, and cosmic transformation. Residing on Mount Kailash, he holds the Trishula (trident), wears the crescent moon on his matted locks, and performs the Cosmic Tandava dance that sustains the rhythm of creation and dissolution.'
+                },
+                {
+                    id: 'durga',
+                    type: 'Debi',
+                    name: 'Maa Durga (Mahishasuramardini)',
+                    aspect: 'Supreme Cosmic Mother & Invincible Shakti',
+                    consort: 'Lord Shiva',
+                    mantra: 'Om Dum Durgayei Namaha',
+                    img: 'https://placehold.co/600x400/2c080e/ff9933?text=Maa+Durga+(Shakti)',
+                    story: 'Maa Durga was manifested through the combined divine radiance of all Devas to vanquish the invincible demon Mahishasura. Riding a lion and bearing ten weapons in her arms, she represents the protective motherly force that destroys evil and restores cosmic equilibrium.'
+                },
+                {
+                    id: 'vishnu',
+                    type: 'Deb',
+                    name: 'Lord Vishnu (Narayana)',
+                    aspect: 'The Supreme Preserver & Sustainer',
+                    consort: 'Goddess Lakshmi',
+                    mantra: 'Om Namo Bhagavate Vasudevaya',
+                    img: 'https://placehold.co/600x400/141210/d4af37?text=Lord+Vishnu+(Preserver)',
+                    story: 'Lord Vishnu rests upon the cosmic serpent Ananta Shesha in the ocean of bliss. Whenever righteousness wanes on Earth, he descends in avatars (including Rama, Krishna, Narasimha, and Buddha) to uphold Dharma and protect humanity.'
+                },
+                {
+                    id: 'kali',
+                    type: 'Debi',
+                    name: 'Maa Kali (Adya Shakti)',
+                    aspect: 'Fierce Divine Mother & Destroyer of Ego',
+                    consort: 'Lord Shiva',
+                    mantra: 'Om Krim Kalikayei Namaha',
+                    img: 'https://placehold.co/600x400/0a0908/ff9933?text=Maa+Kali+(Adya+Shakti)',
+                    story: 'Maa Kali is the ultimate form of cosmic time (Kala) and unconditioned motherly love. Wearing a garland of skulls representing the human ego and letters of the alphabet, she annihilates ignorance and liberates her devotees from fear.'
+                },
+                {
+                    id: 'lakshmi',
+                    type: 'Debi',
+                    name: 'Maa Lakshmi (Mahalakshmi)',
+                    aspect: 'Goddess of Wealth, Prosperity & Grace',
+                    consort: 'Lord Vishnu',
+                    mantra: 'Om Shreem Maha Lakshmiyei Namaha',
+                    img: 'https://placehold.co/600x400/2c080e/d4af37?text=Maa+Lakshmi+(Prosperity)',
+                    story: 'Emerging from the churning of the cosmic ocean (Samudra Manthan), Goddess Lakshmi sits gracefully upon a pink lotus. She bestows both material abundance (Dhana) and spiritual wealth (Adhyatmika Sampatti) upon righteous souls.'
+                },
+                {
+                    id: 'saraswati',
+                    type: 'Debi',
+                    name: 'Maa Saraswati (Mahasaraswati)',
+                    aspect: 'Goddess of Knowledge, Music, Art & Wisdom',
+                    consort: 'Lord Brahma',
+                    mantra: 'Om Aim Saraswatyayei Namaha',
+                    img: 'https://placehold.co/600x400/141210/ffffff?text=Maa+Saraswati+(Wisdom)',
+                    story: 'Dressed in pure white garments and holding the sacred Veena, scriptures, and mala, Maa Saraswati flows like the eternal river of divine consciousness. She inspires poets, scholars, musicians, and seekers of supreme truth.'
+                },
+                {
+                    id: 'ganesha',
+                    type: 'Deb',
+                    name: 'Lord Ganesha (Ganapati)',
+                    aspect: 'Remover of Obstacles & Lord of Intellect',
+                    consort: 'Riddhi & Siddhi',
+                    mantra: 'Om Gam Ganapataye Namaha',
+                    img: 'https://placehold.co/600x400/2c080e/ff9933?text=Lord+Ganesha+(Ganapati)',
+                    story: 'The elephant-headed deity created by Goddess Parvati. Venerated at the beginning of all auspicious endeavors, rituals, and journeys, Ganesha symbolizes wisdom, memory, and spiritual success.'
+                },
+                {
+                    id: 'hanuman',
+                    type: 'Deb',
+                    name: 'Lord Hanuman (Bajrangbali)',
+                    aspect: 'Embodiment of Devotion, Strength & Courage',
+                    consort: 'Celibate (Brahmachari)',
+                    mantra: 'Om Hanumate Namaha',
+                    img: 'https://placehold.co/600x400/1a0408/ff9933?text=Lord+Hanuman+(Devotion)',
+                    story: 'An avatar of Lord Shiva and the supreme devotee of Lord Rama. Hanuman leaped across oceans, carried whole mountains of healing herbs, and remains an eternal immortal (Chiranjeevi) guiding all spiritual seekers.'
+                },
+                {
+                    id: 'krishna',
+                    type: 'Deb',
+                    name: 'Lord Krishna (Yogeshwara)',
+                    aspect: 'Master of Divine Love & Speaker of Bhagavad Gita',
+                    consort: 'Radharani / Rukmini',
+                    mantra: 'Hare Krishna Hare Krishna Krishna Krishna Hare Hare',
+                    img: 'https://placehold.co/600x400/0a0908/d4af37?text=Lord+Krishna+(Yogeshwara)',
+                    story: 'The eighth avatar of Vishnu who enchanted Vrindavan with his divine flute and spoke the immortal wisdom of the Bhagavad Gita on the battlefield of Kurukshetra, teaching selfless action (Karma Yoga) and love.'
+                }
+            ],
+            holyPlaces: [
+                {
+                    name: 'Varanasi (Kashi)',
+                    state: 'Uttar Pradesh',
+                    significance: 'City of Lord Shiva, oldest continuously inhabited spiritual city on Earth along the sacred Ganges river.',
+                    img: 'https://placehold.co/500x350/2c080e/d4af37?text=Varanasi+(Kashi)'
+                },
+                {
+                    name: 'Bodh Gaya',
+                    state: 'Bihar',
+                    significance: 'The sacred Mahabodhi Temple site where Prince Siddhartha attained supreme enlightenment under the Mahabodhi Tree.',
+                    img: 'https://placehold.co/500x350/141210/ff9933?text=Bodh+Gaya'
+                },
+                {
+                    name: 'Golden Temple (Harmandir Sahib)',
+                    state: 'Amritsar, Punjab',
+                    significance: 'The holiest shrine of Sikhism, bathed in gold and surrounded by the sacred Amrit Sarovar lake of nectar.',
+                    img: 'https://placehold.co/500x350/0a0908/d4af37?text=Golden+Temple'
+                },
+                {
+                    name: 'Kedarnath Temple',
+                    state: 'Uttarakhand',
+                    significance: 'Majestic rock temple dedicated to Lord Shiva situated amid the snow-capped Himalayan peaks of the Rudraprayag range.',
+                    img: 'https://placehold.co/500x350/1a0408/ffffff?text=Kedarnath+Dham'
+                }
+            ],
+            epics: [
+                {
+                    title: 'The Ramayana',
+                    author: 'Maharishi Valmiki',
+                    theme: 'Dharma, Ideal Character & Victory of Truth',
+                    desc: 'The epic journey of Prince Rama, Sita Devi, and Lakshmana, exemplifying righteous duty, devotion, and the defeat of Ravana.'
+                },
+                {
+                    title: 'The Mahabharata & Gita',
+                    author: 'Maharishi Ved Vyasa',
+                    theme: 'Cosmic Duty, Karma & Divine Wisdom',
+                    desc: 'The world\'s longest epic poem detailing the Kuru dynasty conflict, containing the 700 verses of the holy Bhagavad Gita.'
+                },
+                {
+                    title: 'The Upanishads & Puranas',
+                    author: 'Ancient Vedic Rishis',
+                    theme: 'Non-duality (Advaita) & Mythological Lore',
+                    desc: 'Philosophical dialogues exploring the oneness of the individual soul (Atman) with the ultimate reality (Brahman).'
+                }
+            ],
+            architecture: [
+                { name: 'Dravidian Temples', region: 'South India', highlight: 'Towering Gopurams and carved stone pillars (e.g. Meenakshi, Brihadeeswarar).' },
+                { name: 'Nagara Style Spires', region: 'North/Central India', highlight: 'Curvilinear Shikhara spires symbolizing sacred mountain peaks (e.g. Khajuraho, Konark).' },
+                { name: 'Rock-Cut Architecture', region: 'Maharashtra', highlight: 'Monolithic marvels carved top-down out of basalt mountains (e.g. Kailash Temple Ellora).' },
+                { name: 'Stepwells (Rani ki Vav)', region: 'Gujarat/Rajasthan', highlight: 'Subterranean water temples with thousands of carved deity sculptures.' }
+            ],
+            arts: [
+                { title: 'Bharatanatyam & Kathak', type: 'Classical Dance', desc: 'Storytelling through rhythmic footwork, intricate mudras (hand gestures), and bhavas (facial expressions).' },
+                { title: 'Hindustani & Carnatic Ragas', type: 'Classical Music', desc: 'Microtonal raga scales evoking specific emotions (rasas) aligned with times of day and seasonal cycles.' },
+                { title: 'Folk & Sacred Crafts', type: 'Artisan Traditions', desc: 'Madhubani painting, Tanjore gold-leaf art, Kanjeevaram weaves, and brass temple idol crafting.' }
+            ],
+            festivals: [
+                { name: 'Diwali (Deepavali)', motif: 'Festival of Lights', desc: 'Celebrating the victory of light over darkness and the return of Lord Rama to Ayodhya.' },
+                { name: 'Kumbh Mela', motif: 'World\'s Largest Gathering', desc: 'Millions bathe at sacred river confluences for spiritual purification and cosmic blessings.' },
+                { name: 'Durga Puja & Navratri', motif: '9 Nights of Divine Mother', desc: 'Venerating the nine forms of Goddess Durga with ecstatic dancing (Garba), pandals, and drumbeats.' },
+                { name: 'Holi', motif: 'Festival of Colors & Love', desc: 'Welcoming spring and celebrating divine love between Radha and Krishna.' }
+            ],
+            philosophies: [
+                { name: 'Nyaya & Vaisheshika', concept: 'Logic & Atomism', desc: 'Systematic analysis of epistemology, valid proof, and physical composition of the universe.' },
+                { name: 'Samkhya & Yoga', concept: 'Dualistic Cosmology & Mind Mastery', desc: 'Patanjali\'s 8-fold path (Ashtanga) to harmonize body, mind, and spirit with Purusha.' },
+                { name: 'Mimamsa & Vedanta', concept: 'Vedic Rituals & Non-Dual Truth', desc: 'Adi Shankaracharya\'s Advaita Vedanta stating Atman (Self) is non-different from Brahman.' }
+            ]
+        };
+
+        // RENDER FUNCTIONS
+        function renderEras() {
+            const container = document.getElementById('eraTimelineGrid');
+            container.innerHTML = database.eras.map((era, index) => `
+                <div onclick="openEraModal(${index})" class="glass-card p-6 rounded-2xl cursor-pointer border border-gold-500/20 hover:border-gold-400 group">
+                    <span class="text-xs font-mono text-saffron-400 font-bold uppercase tracking-wider">${era.time}</span>
+                    <h3 class="text-lg font-bold text-white mt-1 group-hover:text-gold-300 transition-colors">${era.title}</h3>
+                    <p class="text-xs text-gray-400 mt-2 line-clamp-3 leading-relaxed">${era.desc}</p>
+                    <div class="mt-4 text-xs font-bold text-gold-400 flex items-center gap-1">
+                        Explore Era Details <i class="fa-solid fa-arrow-right text-[10px] group-hover:translate-x-1 transition-transform"></i>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderReligions() {
+            const container = document.getElementById('religionsGrid');
+            container.innerHTML = database.religions.map(rel => `
+                <div class="glass-card p-6 rounded-2xl border border-gold-500/20 space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-3xl">${rel.symbol}</span>
+                        <div>
+                            <h3 class="text-base font-bold text-white">${rel.name}</h3>
+                            <span class="text-[10px] text-saffron-400 font-mono">${rel.core}</span>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-300 leading-relaxed font-light">${rel.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderDeities(filter = 'All') {
+            const container = document.getElementById('deitiesGrid');
+            const list = filter === 'All' ? database.deities : database.deities.filter(d => d.type === filter);
+            
+            container.innerHTML = list.map(d => `
+                <div class="glass-card rounded-2xl overflow-hidden border border-gold-500/20 flex flex-col justify-between">
+                    <div>
+                        <div class="relative h-48 overflow-hidden bg-obsidian">
+                            <img src="${d.img}" alt="${d.name}" class="w-full h-full object-cover opacity-85 hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 right-3 px-2.5 py-0.5 rounded-full ${d.type === 'Deb' ? 'bg-gold-500/20 text-gold-300 border-gold-500/40' : 'bg-saffron-500/20 text-saffron-300 border-saffron-500/40'} border text-[10px] font-bold uppercase tracking-wider">${d.type}</span>
+                        </div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="text-lg font-bold text-white">${d.name}</h3>
+                            <p class="text-xs text-saffron-400 font-medium">${d.aspect}</p>
+                            <p class="text-xs text-gray-300 line-clamp-3 leading-relaxed font-light">${d.story}</p>
+                        </div>
+                    </div>
+                    <div class="p-5 pt-0">
+                        <button onclick="openDeityModal('${d.id}')" class="w-full py-2.5 rounded-xl bg-gold-500/10 hover:bg-gold-500/20 text-gold-300 border border-gold-500/30 text-xs font-bold transition-all">
+                            View Full Lore & Sacred Mantra <i class="fa-solid fa-om ml-1"></i>
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderHolyPlaces(query = '') {
+            const container = document.getElementById('holyPlacesGrid');
+            const filtered = database.holyPlaces.filter(p => p.name.toLowerCase().includes(query.toLowerCase()) || p.state.toLowerCase().includes(query.toLowerCase()));
+            
+            container.innerHTML = filtered.map(p => `
+                <div class="glass-card rounded-2xl overflow-hidden border border-gold-500/20">
+                    <img src="${p.img}" alt="${p.name}" class="w-full h-40 object-cover opacity-85">
+                    <div class="p-4 space-y-2">
+                        <span class="text-[10px] font-mono text-saffron-400">${p.state}</span>
+                        <h4 class="text-sm font-bold text-white">${p.name}</h4>
+                        <p class="text-xs text-gray-300 font-light leading-relaxed">${p.significance}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderEpics() {
+            document.getElementById('epicsGrid').innerHTML = database.epics.map(e => `
+                <div class="glass-card p-6 rounded-2xl border border-gold-500/20 space-y-3">
+                    <span class="text-[10px] px-2.5 py-1 rounded-full bg-gold-500/15 text-gold-300 border border-gold-500/30 font-bold uppercase">${e.author}</span>
+                    <h3 class="text-lg font-bold text-white">${e.title}</h3>
+                    <p class="text-xs text-saffron-400 font-medium">${e.theme}</p>
+                    <p class="text-xs text-gray-300 font-light leading-relaxed">${e.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderArchitecture() {
+            document.getElementById('architectureGrid').innerHTML = database.architecture.map(a => `
+                <div class="glass-card p-5 rounded-2xl border border-gold-500/20 space-y-2">
+                    <span class="text-[10px] text-saffron-400 font-mono">${a.region}</span>
+                    <h4 class="text-sm font-bold text-white">${a.name}</h4>
+                    <p class="text-xs text-gray-300 font-light leading-relaxed">${a.highlight}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderArts() {
+            document.getElementById('artsGrid').innerHTML = database.arts.map(a => `
+                <div class="glass-card p-6 rounded-2xl border border-gold-500/20 space-y-2">
+                    <span class="text-[10px] text-gold-400 font-mono uppercase">${a.type}</span>
+                    <h3 class="text-base font-bold text-white">${a.title}</h3>
+                    <p class="text-xs text-gray-300 font-light leading-relaxed">${a.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderFestivals() {
+            document.getElementById('festivalsGrid').innerHTML = database.festivals.map(f => `
+                <div class="glass-card p-5 rounded-2xl border border-gold-500/20 space-y-2">
+                    <i class="fa-solid fa-fire text-saffron-400 text-base"></i>
+                    <h4 class="text-sm font-bold text-white">${f.name}</h4>
+                    <span class="text-[10px] text-gold-300 font-medium block">${f.motif}</span>
+                    <p class="text-xs text-gray-300 font-light leading-relaxed">${f.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        function renderPhilosophies() {
+            document.getElementById('philosophiesGrid').innerHTML = database.philosophies.map(p => `
+                <div class="glass-card p-6 rounded-2xl border border-gold-500/20 space-y-3">
+                    <h3 class="text-base font-bold text-white flex items-center gap-2"><i class="fa-solid fa-brain text-gold-400 text-xs"></i> ${p.name}</h3>
+                    <span class="text-[10px] text-saffron-400 font-mono block">${p.concept}</span>
+                    <p class="text-xs text-gray-300 font-light leading-relaxed">${p.desc}</p>
+                </div>
+            `).join('');
+        }
+
+        // MODAL CONTROLS
+        function openDeityModal(deityId) {
+            const deity = database.deities.find(d => d.id === deityId);
+            if(!deity) return;
+            
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="space-y-6">
+                    <div class="relative h-64 rounded-2xl overflow-hidden border border-gold-500/40">
+                        <img src="${deity.img}" alt="${deity.name}" class="w-full h-full object-cover">
+                        <div class="absolute bottom-4 left-4 bg-obsidian/90 border border-gold-500/30 p-3 rounded-xl">
+                            <span class="text-[10px] font-bold text-saffron-400 uppercase tracking-widest">${deity.type} Aspect</span>
+                            <h2 class="text-2xl font-black text-white">${deity.name}</h2>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+                        <div class="p-3.5 rounded-xl bg-obsidian border border-white/10">
+                            <span class="text-gray-400 block font-semibold">Divine Role:</span>
+                            <span class="text-gold-300 font-bold">${deity.aspect}</span>
+                        </div>
+                        <div class="p-3.5 rounded-xl bg-obsidian border border-white/10">
+                            <span class="text-gray-400 block font-semibold">Consort / Shakti:</span>
+                            <span class="text-gold-300 font-bold">${deity.consort}</span>
+                        </div>
+                    </div>
+
+                    <div class="p-4 rounded-xl bg-saffron-500/10 border border-saffron-500/30 text-center">
+                        <span class="text-[10px] text-saffron-300 font-bold uppercase tracking-wider block mb-1">Sacred Beeja Mantra</span>
+                        <p class="text-base font-serif font-bold text-gold-300">"${deity.mantra}"</p>
+                    </div>
+
+                    <div class="space-y-2">
+                        <h4 class="text-sm font-bold text-white font-cinzel">Cosmic Lore & Significance</h4>
+                        <p class="text-xs text-gray-300 leading-relaxed font-light">${deity.story}</p>
+                    </div>
+                </div>
+            `;
+            document.getElementById('detailModal').classList.remove('hidden');
+        }
+
+        function openEraModal(index) {
+            const era = database.eras[index];
+            const modalContent = document.getElementById('modalContent');
+            modalContent.innerHTML = `
+                <div class="space-y-4">
+                    <span class="text-xs font-mono text-saffron-400 font-bold">${era.time}</span>
+                    <h2 class="text-2xl font-black text-white font-cinzel">${era.title}</h2>
+                    <p class="text-xs text-gold-300 font-serif italic">${era.desc}</p>
+                    <div class="pt-4 border-t border-gold-500/20 text-xs text-gray-300 leading-relaxed font-light">
+                        ${era.details}
+                    </div>
+                </div>
+            `;
+            document.getElementById('detailModal').classList.remove('hidden');
+        }
+
+        function closeDetailModal() {
+            document.getElementById('detailModal').classList.add('hidden');
+        }
+
+        function filterDeities(type) {
+            renderDeities(type);
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('mobileDrawer').classList.toggle('hidden');
+        }
+
+        // GLOBAL LIVE SEARCH
+        function liveGlobalSearch(val) {
+            const query = val.toLowerCase().trim();
+            const container = document.getElementById('searchResultsContainer');
+            
+            if(!query) {
+                container.classList.add('hidden');
+                return;
+            }
+
+            container.classList.remove('hidden');
+            let results = [];
+
+            // Search Deities
+            database.deities.forEach(d => {
+                if(d.name.toLowerCase().includes(query) || d.aspect.toLowerCase().includes(query)) {
+                    results.push({ category: 'Deity ('+d.type+')', title: d.name, desc: d.aspect, action: () => openDeityModal(d.id) });
+                }
+            });
+
+            // Search Eras
+            database.eras.forEach((e, idx) => {
+                if(e.title.toLowerCase().includes(query) || e.desc.toLowerCase().includes(query)) {
+                    results.push({ category: 'Historical Era', title: e.title, desc: e.time, action: () => openEraModal(idx) });
+                }
+            });
+
+            // Search Holy Places
+            database.holyPlaces.forEach(p => {
+                if(p.name.toLowerCase().includes(query) || p.state.toLowerCase().includes(query)) {
+                    results.push({ category: 'Sacred Tirtha', title: p.name, desc: p.state + ' — ' + p.significance, action: null });
+                }
+            });
+
+            if(results.length === 0) {
+                container.innerHTML = `<div class="col-span-full text-center py-6 text-xs text-gray-400">No matching cultural terms found for "${val}".</div>`;
+            } else {
+                container.innerHTML = results.map(r => `
+                    <div class="glass-card p-4 rounded-xl border border-gold-500/20 space-y-1">
+                        <span class="text-[9px] text-saffron-400 uppercase font-mono font-bold">${r.category}</span>
+                        <h4 class="text-xs font-bold text-white">${r.title}</h4>
+                        <p class="text-[11px] text-gray-300 line-clamp-2 font-light">${r.desc}</p>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // INITIALIZE ALL SECTIONS ON LOAD
+        window.addEventListener('DOMContentLoaded', () => {
+            renderEras();
+            renderReligions();
+            renderDeities();
+            renderHolyPlaces();
+            renderEpics();
+            renderArchitecture();
+            renderArts();
+            renderFestivals();
+            renderPhilosophies();
+        });
+    </script>
+</body>
+</html>
